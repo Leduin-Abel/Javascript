@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilos_arrray.css">
+    <script>
+
+        //declaracion de array
+        var articulos=["zapatillas","camiseta","pantalon", "medias"];
+
+        //forma alternativa
+        //var articulos=new Array("zapatillas","camiseta","pantalon", "medias");
+
+        //array vacío
+        //var articulos=[];
+    </script>
+  </head>
+
+  <body>
+    <div class="contenedor">
+      <div class="header">
+        <p class="logo">JavaScript Arrays <i class="mm">Píldoras Informáticas</p>
+      </div>
+      <div class="contenido">
+       <div class="principal">
+          <h1>Manejando Arrays</h1>
+          <script>
+            document.write("<p> El primer articulo es: <strong>");
+
+            document.write(articulos[0] + "</strong></p>");
+            
+            //cuantos elementos hay en el array
+            //alert(articulos.length);
+
+            document.write("<p> El ultimo articulo es: <strong>");
+
+            //si intentara acceder a un elemento en una posicion que no existe me da undefined
+            //para acceder a la ultima posición sin saber cuantos tiene
+            document.write(articulos[articulos.length-1] + "</strong></p>");
+
+            //unshift agrega elementos en la primera posición del array
+            articulos.unshift("plei4");
+
+
+            //revisando el nuevo elemento del array
+            document.write("<p> El nuevo articulo es: <strong>");
+            document.write(articulos[0] + "</strong></p>");
+            
+            document.write("<p> Un ultimo articulo: <strong>");
+            
+            //push agrega elementos a la ultima posicion
+            articulos.push(prompt("Nuevo articulo"));
+
+            document.write(articulos[articulos.length-1] + "</strong></p>");
+
+            document.write("<p>"+  articulos[0] +"<br>");
+            
+            document.write(articulos[1] +"<br>");
+
+            document.write(articulos[2] +"<br>");
+
+            document.write(articulos[3] +"<br>");
+
+            document.write(articulos[4] +"<br>");
+
+            document.write(articulos[5] +"<br></p>");
+
+            alert("Se borrará el primer elemento");
+
+            //shift borra el primer elemento del array
+            articulos.shift();
+
+            document.write("<p>"+  articulos[0] +"<br>");
+            
+            document.write(articulos[1] +"<br>");
+
+            document.write(articulos[2] +"<br>");
+
+            document.write(articulos[3] +"<br>");
+
+            document.write(articulos[4] +"<br> </p>");
+
+
+            alert("Se borrará el ultimo elemento");
+
+            //pop borra el ultimo elemento del array
+            articulos.pop();
+
+
+            document.write("<p>"+  articulos[0] +"<br>");
+            
+            document.write(articulos[1] +"<br>");
+
+            document.write(articulos[2] +"<br>");
+
+            document.write(articulos[3] +"<br> </p>");
+            
+
+
+            
+            
+
+
+
+
+          
+
+
+	        </script>
+        </div>
+      </div>
+  
+    </div>
+  </body>
+</html>
